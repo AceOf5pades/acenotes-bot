@@ -6,6 +6,8 @@ const Discord = require("discord.js");
 // this is what we're refering to. Your client.
 const client = new Discord.Client();
 
+const config = require("./config.json");
+
 const TOKEN = "NDA4NzUwNzE4NDYwMzYyNzUy.DVaeGg.KeiMLtO6GOn2wOuYcpnjfwS1l94";
 
 client.on("ready", () => {
