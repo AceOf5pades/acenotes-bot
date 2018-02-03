@@ -7,6 +7,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 const TOKEN = "NDA4NzUwNzE4NDYwMzYyNzUy.DVaeGg.KeiMLtO6GOn2wOuYcpnjfwS1l94";
+
 const PREFIX = "-";
 
 client.on("ready", () => {
