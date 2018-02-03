@@ -6,7 +6,7 @@ const Discord = require("discord.js");
 // this is what we're refering to. Your client.
 const client = new Discord.Client();
 
-const config = require("./config.json");
+const PREFIX = "-";
 
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
