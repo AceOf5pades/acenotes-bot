@@ -129,6 +129,26 @@ client.on("message", async message => {
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
+  
+    if(command === "help") {
+  const embed = {
+    "color": 0x00ffff,
+ "footer": {
+     "text": "Associated with ProjectAce"
+ },
+ "fields": [
+     {
+     "name": "Help",
+     "value": "This bot is private!",
+     "inline": true
+     }
+ ],
+ "thumbnail": {
+      "url": message.author.avatarURL
+ }
+};
+message.channel.send({embed});
+ } 
 });
 
 client.login(process.env.BOT_TOKEN);
