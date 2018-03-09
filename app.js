@@ -114,11 +114,11 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  if(command === "purge") {
+  if(command === "prune") {
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
-    const deleteCount = parseInt(args[0], 10);
+    const deleteCount = parseInt(args[0], 1);
     
     // Ooooh nice, combined conditions. <3
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
