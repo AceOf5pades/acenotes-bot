@@ -130,6 +130,13 @@ client.on("message", async message => {
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
   
+    if(command === "ping") {
+    // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
+    // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
+    const m = await message.channel.send("**Rebooting!** :wilted_rose: ");
+    m.edit(`**Reboot successfully completed!** :rose: `);
+  }
+  
     if(command === "help") {
   const embed = {
     "color": 0x00ffff,
