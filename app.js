@@ -9,7 +9,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 client.on("ready", () => {
-   var channel = client.channels.get('328887147291607041');
+   var channel = client.channels.get('422249550527594496');
   channel.send(`Loading configs was **successful**! :stuck_out_tongue_winking_eye: Bot has started, with ${client.users.size} users, in ${client.channels.size} channels for **ProjectAce**.`);
   // This event will run if the bot starts, and logs in, successfully.
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
